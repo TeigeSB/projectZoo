@@ -14,7 +14,7 @@ public class Tiger {
 
     public void sleep() {
 
-        System.out.println(this.name + "slept for 8 hours!");
+        System.out.println(this.name + " slept for 8 hours!");
 
     }
 
@@ -33,7 +33,7 @@ public class Tiger {
 
 
     public static void main(String[] args) {
-        //either make a new instance of a zoo
+        //either make a new instance of a Zoo
         //to call the non-static sleep method....
         Tiger tigger = new Tiger("Tigger");
         tigger.eat("meat");
