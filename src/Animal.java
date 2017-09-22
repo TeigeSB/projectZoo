@@ -1,15 +1,20 @@
 /**
  * Created by h205p2 on 9/21/17.
  */
-public class Tiger extends Animal {
+public class Animal {
 
-    public Tiger(String name) {
+    String favoriteFood = "";
+    String name = "";
 
-        super(name, "meat");
+    public Animal(String name, String favoriteFood) {
+        this.name = name;
+        this.favoriteFood = favoriteFood;
+
+
 
     }
 
-    /* public void sleep() {
+    public void sleep() {
 
         System.out.println(this.name + " slept for 8 hours!");
 
@@ -23,19 +28,21 @@ public class Tiger extends Animal {
 
             System.out.println("YUM! " + this.name + " wants more " + food);
 
+        } else if (food != favoriteFood) {
+
+            sleep();
+
         }
 
     }
-*/
-
 
     public static void main(String[] args) {
 
-        Tiger tigger = new Tiger("Tigger");
-        tigger.eat("meat");
-        tigger.eat("kibble");
-        tigger.sleep();
+
 
     }
 
-}
+    }
+
+
+
