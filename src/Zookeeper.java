@@ -9,10 +9,19 @@ public class Zookeeper {
 
     String name = "";
 
-    public void feedAnimals(ArrayList<Animal> animal, String food) {
+    Zookeeper(String name) {
 
-        for (int i = 0; i < animal.size(); i ++) {
+        this.name = name;
 
+    }
+
+    public void feedAnimals(ArrayList<Animal> animals, String food) {
+
+        System.out.println(name + " is feeding " + food + " to " + animals.size() + " animals");
+
+        for (int i = 0; i < animals.size(); i ++) {
+
+            animals.get(i).eat(food);
 
         }
 
