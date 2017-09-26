@@ -5,12 +5,21 @@ public class Animal {
 
     String favoriteFood = "";
     String name = "";
+    static int population = 0;
 
     public Animal(String name, String favoriteFood) {
         this.name = name;
         this.favoriteFood = favoriteFood;
 
 
+
+    }
+
+    public void populationCount() {
+
+        population += 1;
+
+        System.out.println(population);
 
     }
 
